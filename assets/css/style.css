@@ -1,0 +1,67 @@
+.button-group .btn {
+  background: #01a093;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  color: #181818;
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+}
+
+.button-group .btn:hover {
+  background: #05d3c2;
+}
+
+.button-group .btn:active::focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.grid-item {
+  float: left;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.grid-item:hover {
+  cursor: pointer;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.grid-item .img_cnt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(14, 14, 17, 0.6);
+  width: 100%;
+}
+
+.grid-item .img_cnt .cnt {
+  list-style: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50);
+  -webkit-transform: translateY(-50%);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-item .img_cnt .cnt li {
+  display: block;
+}
+
+.grid-item .img_cnt .cnt li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+/*# sourceMappingURL=style.css.map */

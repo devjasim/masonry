@@ -6,9 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/scss/style.css">
     <title>Mesonory</title>
 </head>
 
@@ -16,87 +15,114 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <section class="hero is-light is-medium">
-                    <div class="hero-body">
-                        <div class="container">
-                            <h1 class="title">Testing Masonry - Cascading grid layout library</h1>
-                            <h2 class="subtitle"> <a href="https://www.instagram.com/dan10gc/?hl=en">Images by Daniel Gonzalez</a></h2>
-                        </div>
+                <div class="button-group filter-button mb-4 mt-5 text-center">
+                    <button class="btn" data-filter="*">show all</button>
+                    <button class="btn" data-filter=".group-1">metal</button>
+                    <button class="btn" data-filter=".group-2">transition</button>
+                    <button class="btn" data-filter=".group-3">alkali & alkaline-earth</button>
+                    <button class="btn" data-filter=".group-4">not transition</button>
+                </div>
+            </div>
+        </div>
+        <div class="row grid-group">
+            <div class="col-md-4 grid">
+                <div class="grid-item menu">
+                    <img src="assets/images/img01.jpg" alt="img"/>
+                    <div class="img_cnt">
+                        <ul class="cnt">
+                            <li><a href="#">Creative Design</a></li>
+                            <li><a href="#">Creative Design</a></li>
+                            <li><a href="#">Creative Design</a></li>
+                        </ul>
                     </div>
-                    <div class="hero-foot">
-                        <nav class="tabs is-boxed is-fullwidth">
-                            <div class="container">
-                                <ul id="buttonGroup">
-                                    <li class="is-active"><a id="all">All Images</a></li>
-                                    <li><a id="newYork">New York City </a></li>
-                                    <li><a id="flowers">Flowers</a></li>
-                                    <li><a id="others">Other</a></li>
-                                </ul>
-                            </div>
-                        </nav>
+                </div>
+            </div>
+            <div class="col-md-4 grid group-1">
+                <div class="grid-item menu">
+                    <img src="assets/images/img04.jpg" alt="img"/>
+                    <div class="img_cnt">
+                        <ul class="cnt">
+                            <li><a href="#">Creative Design</a></li>
+                            <li><a href="#">Creative Design</a></li>
+                            <li><a href="#">Creative Design</a></li>
+                        </ul>
                     </div>
-                    <div class="grid" id="container">
-                        <div class="grid-sizer"></div>
-                        <div class="grid-item flowers">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/sunFlowerNJ.jpg" alt="" />
-                        </div>
-                        <div class="grid-item flowers">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/flowers.jpg" />
-                        </div>
-                        <div class="grid-item newYork">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/AmericanStandardBuilding.jpg" />
-                        </div>
-                        <div class="grid-item newYork">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/nycGalaxy.jpg" />
-                        </div>
-                        <div class="grid-item flowers">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/
-                            butterflyOnFlower.jpg" />
-                        </div>
-                        <div class="grid-item newYork">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/nycBuilding2.jpg" />
-                        </div>
-                        <div class="grid-item newYork">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/falafelPost.jpg" />
-                        </div>
-                        <div class="grid-item newYork">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/littleRedLightHouse.jpg" />
-                        </div>
-                        <div class="grid-item flowers">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/gwFlowerB%26W.jpg" />
-                        </div>
-                        <div class="grid-item others">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/highwayExposure2.jpg" />
-                        </div>
-                        <div class="grid-item flowers">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/flowerWithButterfly.jpg" />
-                        </div>
-                        <div class="grid-item flowers">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/flowerWithBee.jpg" />
-                        </div>
-                        <div class="grid-item newYork">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/oilTankerHudson.jpg" />
-                        </div>
-                        <div class="grid-item flowers">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/flowersCloseUp2.jpg"/>
-                        </div>
-                        <div class="grid-item others">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/redMillB%26W.jpg" />
-                        </div>
-                        <div class="grid-item newYork">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/commuteToWork.jpg" />
-                        </div>
-                        <div class="grid-item others">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/miamiNeonSign.jpg" />
-                        </div>
-                        <div class="grid-item flowers">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/redFlowerBleachBypass.jpg" alt="" />
-                        </div>
-                        <div class="grid-item newYork">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1362379/wrGraceBuilding.jpg" />
-                        </div>
-                    </div>
-                </section>
+                </div>
+            </div>
+            <div class="col-md-4 grid group-2">
+                <div class="grid-item menu">
+                    <img src="assets/images/img01.jpg" alt="img"/>
+                </div>
+            </div>
+            <div class="col-md-4 grid group-1">
+                <div class="grid-item menu">
+                    <img src="assets/images/img02.jpg" alt="img"/>
+                </div>
+            </div>
+            <div class="col-md-4 grid group-2">
+                <div class="grid-item menu">
+                    <img src="assets/images/img03.webp" alt="" />
+                </div>
+            </div>
+            <div class="col-md-4 grid group-3">
+                <div class="grid-item menu">
+                    <img src="assets/images/img04.jpg" alt="img"/>
+                </div>
+            </div>
+            <div class="col-md-4 grid group-2">
+                <div class="grid-item menu">
+                    <img src="assets/images/img05.jpeg" alt="img"/>
+                </div>
+            </div>
+            <div class="col-md-4 grid group-3">
+                <div class="grid-item menu">
+                    <img src="assets/images/img04.jpg" alt="img"/>
+                </div>
+            </div>
+            <div class="col-md-4 grid group-4">
+                <div class="grid-item menu">
+                    <img src="assets/images/img01.jpg" alt="img"/>
+                </div>
+            </div>
+            <div class="col-md-4 grid group-4">
+                <div class="grid-item menu">
+                    <img src="assets/images/img02.jpg" alt="img"/>
+                </div>
+            </div>
+            <div class="col-md-4 grid group-3">
+                <div class="grid-item menu">
+                    <img src="assets/images/img03.webp" alt="img"/>
+                </div>
+            </div>
+            <div class="col-md-4 grid group-4">
+                <div class="grid-item menu">
+                    <img src="assets/images/img04.jpg" alt="img"/>
+                </div>
+            </div>
+            <div class="col-md-4 grid group-1">
+                <div class="grid-item menu">
+                    <img src="assets/images/img05.jpeg" alt="img"/>
+                </div>
+            </div>
+            <div class="col-md-4 grid group-4">
+                <div class="grid-item menu">
+                    <img src="assets/images/img04.jpg" alt="img"/>
+                </div>
+            </div>
+            <div class="col-md-4 grid group-3">
+                <div class="grid-item menu">
+                    <img src="assets/images/img02.jpg" alt="img"/>
+                </div>
+            </div>
+            <div class="col-md-4 grid group-2">
+                <div class="grid-item menu">
+                    <img src="assets/images/img01.jpg" alt="img"/>
+                </div>
+            </div>
+            <div class="col-md-4 grid group-4">
+                <div class="grid-item menu">
+                    <img src="assets/images/img03.webp" alt="img"/>
+                </div>
             </div>
         </div>
     </div>
@@ -104,11 +130,9 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugin/isotope.pkgd.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
